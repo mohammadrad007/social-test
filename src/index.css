@@ -6,7 +6,7 @@ body,
 html,
 #root {
   margin: 0;
-  font-family: "iransans";
+  font-family: "iransans" !important;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -34,4 +34,7 @@ code {
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
   font-family: "iransans" !important;
   color: #fff !important;
+}
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+  font-family: "iransans" !important;
 }

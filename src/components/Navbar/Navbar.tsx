@@ -6,13 +6,13 @@ import classes from "./navbar.module.css";
 
 const Navbar = () => {
   return (
-    <div className={classes.Navbar}>
+    <div className={classes.navbar}>
       <div>
         <FaSistrix />
       </div>
       <div className={classes.userInfo}>
         <img src={flag} alt="IranFlag" className={classes.flag} />
-        <img src={userPic} alt="userPic" className={classes.UserPic} />
+        <img src={userPic} alt="userPic" className={classes.userPic} />
       </div>
     </div>
   );

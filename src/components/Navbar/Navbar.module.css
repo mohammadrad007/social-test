@@ -1,4 +1,4 @@
-.Navbar {
+.navbar {
   width: 100%;
   height: 4rem;
   display: flex;
@@ -13,8 +13,8 @@
   align-content: center;
   align-items: center;
 }
-.UserPic {
-  width: 2.5rem;
+.userPic {
+  width: 2.8rem;
   border-radius: 50%;
   margin: 0 1rem;
 }

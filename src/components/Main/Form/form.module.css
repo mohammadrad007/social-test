@@ -6,7 +6,6 @@
   border-radius: 10px;
   color: #ffffff;
 }
-
 .FormBox {
   display: flex;
   justify-content: flex-start;
@@ -16,11 +15,9 @@
   padding: 0 1rem;
   height: 100%;
 }
-
 .FormBox h6 {
   width: 100%;
 }
-
 .FormItems {
   display: flex;
   flex-wrap: wrap;
@@ -30,43 +27,36 @@
 .SelectBox {
   width: 15rem;
 }
-
 .SelectBox label {
   right: 23px;
   left: 0;
   font-family: "iransans";
   color: #ffffff;
 }
-
 .select label {
   right: 23px;
   left: 0;
   font-family: "iransans";
   color: #ffffff;
 }
-
 .select svg {
   color: #ffffff;
   left: 7px;
   right: 210px;
 }
-
 .select fieldset legend {
   text-align: right;
 }
-
-.SubmitBTN {
-  text-align: left;
+.buttonsBox {
   width: 100%;
+  text-align: left;
   margin: 1rem 0;
 }
-
-.addWay {
+.submitBtn {
   font-family: "iransans" !important;
-  box-shadow: 0px 0px 15px goldenrod !important;
+  box-shadow: 0px 0px 5px 1px goldenrod !important;
   margin-right: 1rem !important;
 }
-
-.unSubmit {
+.cancelBtn {
   font-family: "iransans" !important;
 }

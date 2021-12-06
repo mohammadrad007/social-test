@@ -94,20 +94,19 @@ const Card: React.FC<CardType> = ({
         return "پیدا نشد";
     }
   };
-  console.log(data);
 
   return (
     <>
       <Modal
         open={open}
-        // onClose={handleClose}
+        onClose={() => setOpen(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
         <Box className={classes.modalBody}>
           <h4>آیا از تصمیم خود مطمئن هستید؟</h4>
           <p>
-            برای حذف مسیر ارتباطی <span>{data.value.IDs}</span> لطفا تایید را
+            برای حذف مسیر ارتباطی <span>{data?.value?.IDs}</span> لطفا تایید را
             بنویسید
           </p>
           <TextField
@@ -120,8 +119,8 @@ const Card: React.FC<CardType> = ({
           <div className={classes.buttonsBox}>
             <Button
               color="warning"
-              className={classes.EditBTN}
-              value={data.id}
+              className={classes.editBtn}
+              value={data?.id}
               onClick={() => setOpen(false)}
             >
               انصراف
@@ -129,8 +128,8 @@ const Card: React.FC<CardType> = ({
             <Button
               disabled={disabledBtn}
               color="error"
-              value={data.id}
-              className={classes.DeleteBTN}
+              value={data?.id}
+              className={classes.deleteBtn}
               onClick={handleDelete}
             >
               تایید
@@ -142,22 +141,22 @@ const Card: React.FC<CardType> = ({
         <div className={classes.CardBody}>
           <div className={classes.RightSide}>
             <div>
-              {renderSwitchIcon(data.value.Socials)}
-              <h4>{renderSwitchSocials(data.value.Socials)}</h4>
+              {renderSwitchIcon(data?.value?.Socials)}
+              <h4>{renderSwitchSocials(data?.value?.Socials)}</h4>
             </div>
             <div>
               <span> آی دی (ID) :</span>
-              <div className={classes.cardId}>{data.value.IDs}</div>
+              <div className={classes.cardId}>{data?.value?.IDs}</div>
             </div>
             <div>
               <span> لینک :</span>
-              <div className={classes.cardLink}>{data.value.Links}</div>
+              <div className={classes.cardLink}>{data?.value?.Links}</div>
             </div>
           </div>
           <div>
             <Button
               color="warning"
-              className={classes.EditBTN}
+              className={classes.editBtn}
               value={data.id}
               onClick={handleEdit}
             >
@@ -167,7 +166,7 @@ const Card: React.FC<CardType> = ({
             <Button
               color="error"
               value={data.id}
-              className={classes.DeleteBTN}
+              className={classes.deleteBtn}
               onClick={handleOpenDelete}
             >
               <FaTrashAlt />

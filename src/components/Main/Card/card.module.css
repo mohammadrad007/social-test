@@ -40,17 +40,17 @@
 .cardLink {
   color: goldenrod;
 }
-.EditBTN {
+.editBtn {
   color: goldenrod !important;
   font-family: "iransans" !important;
   border-radius: 10px !important;
 }
-.DeleteBTN {
+.deleteBtn {
   color: red !important;
   font-family: "iransans" !important;
   border-radius: 10px !important;
 }
-.DeleteBTN:disabled {
+.deleteBtn:disabled {
   color: rgb(146, 145, 145) !important;
 }
 .buttonText {

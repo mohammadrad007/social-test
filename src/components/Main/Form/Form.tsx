@@ -102,10 +102,10 @@ const Form: React.FC<FromType> = ({
               value={formik.values.IDs}
               onChange={formik.handleChange}
             />
-            <div className={classes.SubmitBTN}>
+            <div className={classes.buttonsBox}>
               <Button
                 variant="outlined"
-                className={classes.unSubmit}
+                className={classes.cancelBtn}
                 color="inherit"
                 onClick={() => {
                   setExpanded(false);
@@ -118,7 +118,7 @@ const Form: React.FC<FromType> = ({
               <Button
                 color="warning"
                 variant="contained"
-                className={classes.addWay}
+                className={classes.submitBtn}
                 type="submit"
               >
                 {isEdit ? " ویرایش مسیر ارتباطی" : "ثبت مسیر ارتباطی"}
