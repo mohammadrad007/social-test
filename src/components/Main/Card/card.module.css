@@ -1,0 +1,94 @@
+.Card {
+  width: 95%;
+  margin: 2rem 0;
+  height: 4rem;
+  background-color: rgb(53, 53, 53);
+  border-radius: 10px;
+  color: #ffffff;
+}
+.CardBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 2rem;
+  font-size: 15px;
+}
+.RightSide {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.RightSide svg {
+  font-size: 25px;
+  margin-left: 1rem;
+}
+.RightSide div {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.RightSide div span {
+  color: rgb(156, 156, 154);
+}
+.cardId {
+  direction: ltr;
+  margin: 1rem;
+}
+.cardLink {
+  color: goldenrod;
+}
+.EditBTN {
+  color: goldenrod !important;
+  font-family: "iransans" !important;
+  border-radius: 10px !important;
+}
+.DeleteBTN {
+  color: red !important;
+  font-family: "iransans" !important;
+  border-radius: 10px !important;
+}
+.DeleteBTN:disabled {
+  color: rgb(146, 145, 145) !important;
+}
+.buttonText {
+  margin-right: 0.5rem;
+}
+.modalBody {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(53, 53, 53);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+}
+.buttonsBox {
+  align-self: flex-end;
+  margin-top: 0.5rem;
+}
+.modalBody h4 {
+  color: #ffffff;
+}
+.modalBody p {
+  color: #ffffff;
+  font-size: 0.87rem;
+}
+.modalBody span {
+  font-size: 0.7rem;
+}
+.modalInput div input {
+  border: 1px solid rgb(107, 105, 105) !important;
+  border-radius: 8px;
+}
+.modalInput div input:focus {
+  border: 2px solid goldenrod !important;
+}
+.modalInput div fieldset {
+  border: none !important;
+}

@@ -2,7 +2,7 @@ import { FaSistrix } from "react-icons/fa";
 import userPic from "../../assets/images/user.jpg";
 import flag from "../../assets/images/flag.png";
 
-import classes from "./Navbar.module.css";
+import classes from "./navbar.module.css";
 
 const Navbar = () => {
   return (
