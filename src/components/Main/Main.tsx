@@ -79,7 +79,12 @@ const Main = () => {
                     setEditData={setEditData}
                   />
                 ))
-              : null}
+              : !expanded && (
+                  <p className={classes.emptyMessage}>
+                    *** وقت بخیر، شما می‌توانید با کلیک بر روی 'افزودن مسیر
+                    ارتباطی' یک مسیر ارتباطی اضافه کنید ***
+                  </p>
+                )}
           </div>
         </div>
       </div>
