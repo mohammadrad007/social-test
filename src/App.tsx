@@ -1,11 +1,14 @@
 import "./App.css";
+// import Main from "./Components/Main/Main";
+import Navbar from "./components/Navbar/Navbar";
 
-const App = () => {
+function App() {
   return (
     <div className="App-header">
-      <div className="App-body"></div>
+      <Navbar />
+      <div className="App-body">{/* <Main /> */}</div>
     </div>
   );
-};
+}
 
 export default App;
